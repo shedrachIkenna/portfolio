@@ -1,43 +1,53 @@
 *{
-    background-color: #fefefe;
+    background-color: #151515;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    color: #fefefe;
 }
 
 body{
-    margin: auto;
+    // margin: auto;
     font-family: 'Inter', sans-serif;
-}
+    padding: 10rem 0 10rem 6rem;
 
-.main{
-    display: flex;
-    justify-content: center;
-    margin-top: 2rem;
+    h1{
+        font-size: 2.8rem;
+    }
 
-    .nameBox{
-        border: 2px solid#c8c8c8;
-        max-width: fit-content;
-        padding: 0.5rem 4rem;
-        line-height: 3.3rem;
+    .main{
+        display: flex;
+        justify-content: space-between;
+        border: 1px solid red;
+        max-width: 80rem;
 
-        .firstName{
-            letter-spacing: .7rem;
-            font-weight: 300;
-            font-size: 2.3rem;
+        .boxes{
+            border: 1px solid yellow;
+            min-width: 200px;
         }
 
-        .lastName{
-            font-size: 5.3rem;
-            font-weight: 700;
-        }
+        #profile-box{
+            flex-grow: 1;
+            max-width: 40rem;
+            .nameBox{
+                margin-bottom: 1rem;
 
-        .titleBox{
-            margin-top: 2rem;
-            .role{
-                text-align: center;
-                font-size: smaller;
+                h1{
+                    line-height: 2.9rem;
+                }
+            }
+
+            .roleBox{
+                color: #606060;
+                font-size: 0.7rem;
+                line-height: 1.5rem;
             }
         }
+
+        #project-box{
+            flex-grow: 1;
+        }
     }
+
 }
+
