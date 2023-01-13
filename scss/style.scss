@@ -10,7 +10,7 @@ body{
     font-family: 'Inter', sans-serif;
     padding: 10rem 0rem;
     background-color: #151515;
-    border: 1px solid red;
+    // border: 1px solid red;
     display: flex;
     justify-content: center;
 
@@ -19,13 +19,13 @@ body{
     }
 
     h1{
-        font-size: 5rem;
+        font-size: 4.5rem;
         font-weight: 700;
     }
 
     .main{
         width: 100%;
-        border: 1px solid red;
+        // border: 1px solid red;
         max-width: 90rem;
 
         @media only screen and (min-width: 768px) {
@@ -34,11 +34,12 @@ body{
         }
 
         .boxes{
-            border: 1px solid yellow;
+            // border: 1px solid yellow;
         }
 
         #profile-box{
             max-width: 40rem;
+            padding: 1.5rem;
             .nameBox{
                 margin-bottom: 1rem;
 
@@ -57,11 +58,23 @@ body{
                 }
             }
 
+            .links{
+                margin-top: 3rem;
+
+                a{
+                    padding-right: 2.5rem;
+                }
+
+                img{
+                    height: 13px;
+                }
+            }
+
 
         }
 
         #project-box{
-            min-width: 40rem;
+            min-width: 35rem;
 
             #mid-pboxes{
                 margin: 0.4rem 0;
@@ -71,6 +84,12 @@ body{
                 padding: 1.5rem;
                 background-color: #212023;
                 // border: 1px solid red;
+
+                .header-box{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                }
 
                 .pboxes-header {
                     color: #cecdd0;
