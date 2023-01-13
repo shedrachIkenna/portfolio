@@ -1,5 +1,4 @@
 *{
-    background-color: #151515;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -7,45 +6,108 @@
 }
 
 body{
-    // margin: auto;
+    margin: auto;
     font-family: 'Inter', sans-serif;
-    padding: 10rem 0 10rem 6rem;
+    padding: 10rem 0rem;
+    background-color: #151515;
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+
+    a{
+        text-decoration: none;
+    }
 
     h1{
-        font-size: 2.8rem;
+        font-size: 5rem;
+        font-weight: 700;
     }
 
     .main{
-        display: flex;
-        justify-content: space-between;
+        width: 100%;
         border: 1px solid red;
-        max-width: 80rem;
+        max-width: 90rem;
+
+        @media only screen and (min-width: 768px) {
+            display: flex;
+            justify-content: space-between;
+        }
 
         .boxes{
             border: 1px solid yellow;
-            min-width: 200px;
         }
 
         #profile-box{
-            flex-grow: 1;
             max-width: 40rem;
             .nameBox{
                 margin-bottom: 1rem;
 
                 h1{
-                    line-height: 2.9rem;
+                    line-height: 4.6rem;
                 }
             }
 
             .roleBox{
-                color: #606060;
-                font-size: 0.7rem;
+                // color: #606060;
+                font-size: 0.8rem;
                 line-height: 1.5rem;
+
+                p{
+                    color:#cecdd0;
+                }
             }
+
+
         }
 
         #project-box{
-            flex-grow: 1;
+            min-width: 40rem;
+
+            #mid-pboxes{
+                margin: 0.4rem 0;
+            }
+
+            .pboxes{
+                padding: 1.5rem;
+                background-color: #212023;
+                // border: 1px solid red;
+
+                .pboxes-header {
+                    color: #cecdd0;
+                    font-size: .7rem;
+                    margin-bottom: .5rem;
+                }
+
+                .pboxes-star{
+                    color: #cecdd0;
+                    font-size: .6rem;
+                    // margin-bottom: .5rem 0;
+                    padding: 0.7rem 0;
+                    // padding-bottom: rem;
+                    display: flex;
+                    align-items: center;
+                    img{
+                        padding-right: 0.3rem;
+                        height: 10px;
+                    }
+                }
+
+                h2{
+                    font-weight: 500;
+                    color: #e6e6e8;
+                    margin-bottom: .4rem;
+                }
+
+                .pboxes-description{
+                    font-size: .7rem;
+                    color: #bebebe;
+                    margin-bottom: .6rem;
+                }
+
+                .pboxes-header{
+                    color: #cecdd0;
+                }
+            }
         }
     }
 
