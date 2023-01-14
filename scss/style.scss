@@ -14,13 +14,39 @@ body{
     display: flex;
     justify-content: center;
 
+    @media only screen and (max-width: 1000px) {
+        padding: 6rem 0;
+    }
+
+    
+
     a{
         text-decoration: none;
     }
 
     h1{
-        font-size: 4.5rem;
-        font-weight: 700;
+        font-size: 3rem;
+        font-weight: 600;
+        color: blue;
+
+        // @media only screen and (min-width: 619px) {
+        //     font-size: 2rem;
+        //     font-weight: 700;
+        //     color: blue;
+        // }
+
+        // @media only screen and (max-width: 1145px) {
+        //     font-size: 4.2rem;
+        //     font-weight: 700;
+        //     color: blue;
+        // }
+
+        // @media only screen and (max-width: 1180px) {
+        //     font-size: 4.5rem;
+        //     font-weight: 700;
+        //     color: #fefefe;
+        // }
+
     }
 
     .main{
@@ -28,7 +54,7 @@ body{
         // border: 1px solid red;
         max-width: 90rem;
 
-        @media only screen and (min-width: 768px) {
+        @media only screen and (min-width: 1134px) {
             display: flex;
             justify-content: space-between;
         }
@@ -37,14 +63,26 @@ body{
             // border: 1px solid yellow;
         }
 
-        #profile-box{
-            max-width: 40rem;
+        .projects-text{
+            font-weight: 700;
+            font-size: 1rem;
             padding: 1.5rem;
+        }
+
+        #profile-box{
+            padding: 1.5rem;
+            width: 100%;
+            border: 1px solid red;
+
+            @media only screen and (min-width: 1134px) {
+                max-width: 40rem;
+            }
+
             .nameBox{
-                margin-bottom: 1rem;
+                margin-bottom: 2rem;
 
                 h1{
-                    line-height: 4.6rem;
+                    line-height: 3rem;
                 }
             }
 
@@ -74,7 +112,15 @@ body{
         }
 
         #project-box{
-            min-width: 35rem;
+            border: 1px solid red;
+
+            @media only screen and (max-width: 1000px) {
+                padding: 0rem 1.5rem 0 1.5rem;
+            }
+
+            @media only screen and (min-width: 1000px) {
+                min-width: 35rem;
+            }
 
             #mid-pboxes{
                 margin: 0.4rem 0;
